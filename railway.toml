@@ -1,12 +1,8 @@
-# Divine AGI V16 — Railway Configuration
-# Uses pre-built binary - fast deployment!
-
 [build]
 builder = "dockerfile"
 dockerfilePath = "Dockerfile"
 
 [deploy]
-startCommand = "./divine-agi server --port $PORT"
 healthcheckPath = "/api/status"
 healthcheckTimeout = 60
 restartPolicyType = "ON_FAILURE"
